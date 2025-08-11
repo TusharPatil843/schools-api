@@ -9,6 +9,9 @@ app.use(express.json());
 
 app.use('/api', schoolsRoutes);
 
+
+
+
 // 404 handler
 app.use((req, res) => res.status(404).json({ success: false, message: 'Not found' }));
 
